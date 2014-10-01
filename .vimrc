@@ -1,3 +1,6 @@
+set shell=bash              " set shell to bash, in case of some shell (like fish) will fail
+                            " to source .vimrc
+
 set t_Co=256
 syntax on
 colorscheme default
@@ -6,7 +9,7 @@ colorscheme default
 set expandtab
 
 " tab width
-set tabstop=4               " tab size = 4
+set softtabstop=4           " tab size = 4
 set shiftwidth=4
 
 " view peripherals
@@ -20,7 +23,7 @@ set mouse=c                 " mouse=c to make copy operation easier
 
 " plugins
 filetype plugin on          " enable plugins like PEP8 for python
-filetype plugin indent on   " ??
+filetype plugin indent on   " enable indent configuration
 
 " Pathogen: Manage your runtime path (https://github.com/tpope/vim-pathogen)
 execute pathogen#infect()
