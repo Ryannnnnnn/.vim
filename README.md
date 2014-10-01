@@ -5,8 +5,14 @@ My .vim configuration
 
 * Author: Ryannnnnnn
 
+### Supports
 
-### Configuration
+* **Syntastic**: Syntax checking for programming languages
+* **Tagbar**: Displays tags in vim window
+* **vim-jade**: Jade Template Engine highlighting
+* to be continued ...
+
+### Initialize .vim configuration
 
 ```
 cd ~
