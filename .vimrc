@@ -33,5 +33,6 @@ nmap <F8> :TagbarToggle<CR>
 set tags=./tags,tags,.git/tags;
 " Syntastic: Auto syntax checking (https://github.com/scrooloose/syntastic)
 " let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers = ['pep8']
+let g:syntastic_javascript_checkers = ['jshint']    " npm install jshint
+let g:syntastic_python_checkers = ['pep8']          " brew install pep8
+let g:syntastic_cpp_compiler_options = '-std=c++11' " c++11 compiler options
