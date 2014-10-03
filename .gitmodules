@@ -7,3 +7,6 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = git@github.com:digitaltoad/vim-jade.git
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
