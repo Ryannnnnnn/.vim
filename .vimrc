@@ -1,18 +1,19 @@
-set shell=bash              " set shell to bash, in case of some shell (like fish) will fail
-                            " to source .vimrc
+set shell=zsh               " set shell to bash, in case of some shell (like 
+                            " fish) will fail to source .vimrc
 
 " Vundle, Plugin manager for Vim (https://github.com/gmarik/Vundle.vim)
 set nocompatible
-filetype off
+"filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
 
-call vundle#end()
+"call vundle#end()
 
 " plugins
+filetype on
 filetype plugin on          " enable plugins like PEP8 for python
 filetype plugin indent on   " enable indent configuration
 
@@ -25,7 +26,7 @@ colorscheme default
 set expandtab
 
 " tab width
-set softtabstop=4           " tab size = 4
+set softtabstop=4           " tab size = 2
 set shiftwidth=4
 
 " view peripherals
@@ -34,8 +35,13 @@ set ruler                   " little ruler
 set hlsearch                " highlight search result
 set cursorline              " highlight cursor line
 
+"highlight overlength ctermbg=red ctermfg=white guibg=#592929
+"match overlength /\%81v.\+/
+
 " operation
 set mouse=c                 " mouse=c to make copy operation easier
+
+set clipboard=unnamed       " synchronize system clipboard and Vim's unnamed register 
 
 " Pathogen, Manage your runtime path (https://github.com/tpope/vim-pathogen)
 execute pathogen#infect()
