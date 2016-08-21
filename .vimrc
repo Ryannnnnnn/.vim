@@ -12,12 +12,20 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'          " Vim Package Manager
 
 Plugin 'scrooloose/nerdtree'        " Tree Explorer
+Plugin 'bling/vim-airline'          " Status line
+Plugin 'majutsushi/tagbar'          " Tag bar
 
+Plugin 'tpope/vim-fugitive'         " Git wrapper
+Plugin 'airblade/vim-gitgutter'     " Git diffs
+
+" Color themes
 Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'scrooloose/syntastic'
-
-Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/syntastic'       " Syntax checker
+" Plugin 'valloric/youcompleteme'     " Code Completion
+Plugin 'pangloss/vim-javascript'    " JavaScript Language
+Plugin 'kchmck/vim-coffee-script'   " Coffee Language
 
 call vundle#end()
 " Vundle END---
@@ -51,9 +59,18 @@ set clipboard=unnamed       " synchronize system clipboard and Vim's unnamed reg
 
 " =========================== Vim Plugins ===========================
 
-let g:molokai_original = 1
-let g:rehash256 = 1
-colorscheme molokai
+" Map Ctrl+N to NERDTreeToggle
+map <C-n> :NERDTreeToggle<CR>
+
+" Map F8 to Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+set background=dark
+" let g:molokai_original = 1
+" let g:rehash256 = 1
+" colorscheme molokai
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " Syntastic, Auto syntax checking (https://github.com/scrooloose/syntastic)
 " let g:syntastic_javascript_checkers = ['eslint']
