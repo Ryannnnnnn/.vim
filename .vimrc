@@ -66,11 +66,11 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 set background=dark
-" let g:molokai_original = 1
-" let g:rehash256 = 1
-" colorscheme molokai
-let g:solarized_termcolors=256
-colorscheme solarized
+let g:molokai_original = 1
+let g:rehash256 = 1
+colorscheme molokai
+"let g:solarized_termcolors=256
+"colorscheme solarized
 
 " Syntastic, Auto syntax checking (https://github.com/scrooloose/syntastic)
 " let g:syntastic_javascript_checkers = ['eslint']
