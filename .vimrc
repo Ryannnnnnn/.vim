@@ -9,23 +9,24 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'          " Vim Package Manager
+Plugin 'gmarik/Vundle.vim'              " Vim Package Manager
 
-Plugin 'scrooloose/nerdtree'        " Tree Explorer
-Plugin 'bling/vim-airline'          " Status line
-Plugin 'majutsushi/tagbar'          " Tag bar
+Plugin 'scrooloose/nerdtree'            " Tree Explorer
+Plugin 'Xuyuanp/nerdtree-git-plugin'    " NERDTree git support
+Plugin 'bling/vim-airline'              " Status line
+Plugin 'majutsushi/tagbar'              " Tag bar
 
-Plugin 'tpope/vim-fugitive'         " Git wrapper
-Plugin 'airblade/vim-gitgutter'     " Git diffs
+Plugin 'tpope/vim-fugitive'             " Git wrapper
+Plugin 'airblade/vim-gitgutter'         " Git diffs
 
 " Color themes
 Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'scrooloose/syntastic'       " Syntax checker
-" Plugin 'valloric/youcompleteme'     " Code Completion
-Plugin 'pangloss/vim-javascript'    " JavaScript Language
-Plugin 'kchmck/vim-coffee-script'   " Coffee Language
+Plugin 'scrooloose/syntastic'           " Syntax checker
+" Plugin 'valloric/youcompleteme'       " Code Completion
+Plugin 'pangloss/vim-javascript'        " JavaScript Language
+Plugin 'kchmck/vim-coffee-script'       " Coffee Language
 
 call vundle#end()
 " Vundle END---
