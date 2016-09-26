@@ -1,6 +1,7 @@
 
 git submodule update --init
 
-ln -s .vimrc ~/.vimrc
+cd
+ln -s .vim/.vimrc ~/.vimrc
 
 vim +PluginInstall +qall
