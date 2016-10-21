@@ -27,6 +27,7 @@ Plugin 'scrooloose/syntastic'           " Syntax checker
 " Plugin 'valloric/youcompleteme'       " Code Completion
 Plugin 'pangloss/vim-javascript'        " JavaScript Language
 Plugin 'kchmck/vim-coffee-script'       " Coffee Language
+Plugin 'nginx.vim'
 
 call vundle#end()
 " Vundle END---
@@ -45,6 +46,8 @@ set fileformats+=dos
 set expandtab               " expand tab character to spaces
 set softtabstop=4
 set shiftwidth=4
+
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 
 " view peripherals
 set number
